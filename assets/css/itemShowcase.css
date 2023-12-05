@@ -1,0 +1,119 @@
+.showcase {
+    background-image: url(../img/what-title.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+    height: 480px;
+    padding: 13rem 0;
+    background-color: #f6f6f6;
+}
+
+.showcase .showcase-title {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+/* bean section */
+.container-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    font-size: 30px;
+    text-align: center;
+}
+
+.bean .member-img {
+    width: 30rem;
+}
+
+.bean .appeared {
+    width: 80%;
+}
+
+.bean .appeared .appeared-content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.bean .appeared .appeared-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.bean .appeared .appeared-title a:hover {
+    color: var(--main-color) !important;
+}
+
+.bean .appeared .appeared-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #656565;
+}
+
+.bean .item-custom-icon {
+    position: absolute;
+    display: inline-block;
+}
+
+.bean .item-custom-icon-1 {
+    right: 67%;
+}
+
+.bean .item-custom-icon-2 {
+    left: 67%;
+}
+
+@media (max-width: 1400px) {
+    .display-div {
+        display: block;
+    }
+
+    .bean .appeared .appeared-content-1{
+        padding: 0 5rem 0 0 !important;
+    }
+
+    .bean .appeared .appeared-content-2{
+        padding: 0 0 0 5rem !important;
+    }
+
+    .bean .item-custom-icon-1 {
+        right: auto;
+    }
+
+    .bean .item-custom-icon-2 {
+        left: auto;
+    }
+
+    .appeared-title-2,
+    .appeared-text-2{
+        text-align: start !important;
+    }
+
+    .grid-item{
+        align-items: center !important;
+    }
+}
+
+@media (max-width: 680px) {
+    .showcase {
+        background-size: cover;
+        background-position: center 70px;
+        height: 15rem;
+    }
+
+    .showcase .showcase-title {
+        font-size: 2rem;
+    }
+
+    .bean .member-img {
+        width: 100%;
+    }
+}

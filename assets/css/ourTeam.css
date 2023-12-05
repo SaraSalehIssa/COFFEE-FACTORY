@@ -1,0 +1,65 @@
+.our-team {
+    background-image: url(../img/our-team-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+    height: 480px;
+    padding: 13rem 0;
+    background-color: #f6f6f6;
+}
+
+.our-team .our-team-title {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+/* team section */
+.team .member-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.team .name {
+    line-height: 1.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.team .job {
+    font-family: "Open Sans", sans-serif;
+    line-height: 26px;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 6px 0 10p;
+}
+
+.team .member-icon {
+    font-size: 15px;
+    color: #b3b3b3;
+    margin: 0 15px 0 0;
+}
+
+.team .member-icon:hover {
+    color: var(--main-color) !important;
+}
+
+@media (max-width: 800px) {
+    .our-team {
+        background-position: center 70px;
+        height: 12rem;
+    }
+
+    .our-team .our-team-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .our-team .our-team-title {
+        font-size: 1.3rem;
+    }
+}

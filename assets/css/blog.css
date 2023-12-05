@@ -1,0 +1,116 @@
+.blog {
+    background-image: url(../img/what-title.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+    height: 480px;
+    padding: 13rem 0;
+    background-color: #f6f6f6;
+}
+
+.blog .blog-title {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.coffee-herald {
+    background-image: none;
+}
+
+.herald-content {
+    padding: 0 15px;
+    margin: 0 0 35px;
+}
+
+.part-2{
+    background-image: url(../img/menu-background-img.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding: 8rem 0;
+}
+
+.post-title {
+    font-family: Marcellus,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.post-title:hover,
+.post-info-date:hover {
+    color: var(--main-color) !important;
+}
+
+.post-info-date {
+    display: block;
+    margin: 0 0 12px;
+    line-height: 1;
+    font-size: 13px;
+    color: #656565;
+}
+
+.post-image-holder{
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-content{
+    padding: 30px;
+    background-color: white;
+}
+
+.blog-item{
+    list-style: none;
+}
+
+.post-image{
+    width: 7rem;
+    object-fit: cover;
+}
+
+.post-excerpt{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 8px 0 0;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #656565;
+}
+
+.read-more-btn-anchor{
+    font-size: 12px;
+    line-height: 1.15em;
+    letter-spacing: .15em;
+    font-weight: 600;
+}
+
+.read-more-btn-anchor:hover{
+    color: var(--main-color) !important;
+}
+
+@media (max-width: 800px) {
+    .blog {
+        background-position: center 70px;
+        height: 12rem;
+    }
+
+    .blog .blog-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .blog {
+        background-position: center 70px;
+        height: 15rem;
+    }
+
+    .blog .blog-title {
+        font-size: 1.3rem;
+    }
+}

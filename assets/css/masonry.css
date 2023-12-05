@@ -1,0 +1,264 @@
+.masonry {
+    background-image: url(../img/p2-parallax-img-1.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+    height: 480px;
+    padding: 13rem 0;
+    background-color: #f6f6f6;
+}
+
+.masonry .masonry-title {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+/* sweet section */
+.row-masonry {
+    position: relative;
+    height: 1330px;
+    opacity: 1;
+}
+
+.col-1 {
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    height: 302.5px;
+}
+
+.col-2 {
+    position: absolute;
+    left: 24.9624%;
+    top: 0px;
+    height: 302.5px;
+}
+
+.col-3 {
+    position: absolute;
+    left: 74.9624%;
+    top: 0px;
+    height: 302.5px;
+}
+
+.col-4 {
+    position: absolute;
+    left: 0%;
+    top: 332px;
+    height: 302.5px;
+}
+
+.col-5 {
+    position: absolute;
+    left: 24.9624%;
+    top: 332px;
+    height: 302.5px;
+}
+
+.col-6 {
+    position: absolute;
+    left: 50%;
+    top: 332px;
+    height: 635px;
+}
+
+.col-7 {
+    position: absolute;
+    left: 0%;
+    top: 665px;
+    height: 635px;
+}
+
+.col-8 {
+    position: absolute;
+    left: 24.9624%;
+    top: 665px;
+    height: 302.5px;
+}
+
+.col-9 {
+    position: absolute;
+    left: 24.9624%;
+    top: 997px;
+    height: 302.5px;
+}
+
+.col-10 {
+    position: absolute;
+    left: 74.9624%;
+    top: 997px;
+    height: 302.5px;
+}
+
+.sweet-img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.sweet-img-double {
+    height: 41rem;
+    object-fit: cover;
+}
+
+.sweet .sweet-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sweet-item:hover {
+    cursor: pointer;
+}
+
+.sweet-item:hover .sweet-content {
+    opacity: 1;
+}
+
+.sweet-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 0;
+    margin: 0;
+    margin-right: 1rem;
+}
+
+.sweet .sweet-item-title:hover,
+.sweet .sweet-item-p:hover,
+.sweet .filtered:hover {
+    color: var(--main-color) !important;
+}
+
+@media (max-width: 1025px) {
+
+    .sweet,
+    .sweet-container {
+        width: auto;
+    }
+
+    .sweet-container {
+        margin: 0 6rem;
+    }
+
+    .row-masonry {
+        position: relative;
+        height: 1500px;
+        opacity: 1;
+    }
+
+    .sweet-img-s {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .sweet-img-m {
+        height: 15rem;
+        width: 32.2rem;
+    }
+
+    .sweet-img-l {
+        height: 30rem;
+        width: 15rem;
+    }
+
+    .sweet-img-xl {
+        height: 30rem;
+        width: 32.2rem;
+    }
+
+    .col-1 {
+        position: absolute;
+        left: 0%;
+        top: 0px;
+        height: 235.987px;
+    }
+
+    .col-2 {
+        position: absolute;
+        left: 33.208%;
+        top: 0px;
+        height: 235.987px;
+    }
+
+    .col-3 {
+        position: absolute;
+        left: 0%;
+        top: 265px;
+        height: 235.987px;
+    }
+
+    .col-4 {
+        position: absolute;
+        left: 33.208%;
+        top: 265px;
+        height: 235.987px;
+    }
+
+    .col-5 {
+        position: absolute;
+        left: 66.5414%;
+        top: 265px;
+        height: 235.987px;
+    }
+
+    .col-6 {
+        position: absolute;
+        left: 0%;
+        top: 531px;
+        height: 502px;
+    }
+
+    .col-7 {
+        position: absolute;
+        left: 66.5414%;
+        top: 531px;
+        height: 502px;
+    }
+
+    .col-8 {
+        position: absolute;
+        left: 66.5414%;
+        top: 1040px;
+        height: 235.987px;
+    }
+
+    .col-9 {
+        position: absolute;
+        left: 0%;
+        top: 1040px;
+        height: 235.987px;
+    }
+
+    .col-10 {
+        position: absolute;
+        left: 0%;
+        top: 1310px;
+        height: 235.987px;
+    }
+}
+
+@media (max-width: 680px) {
+    .masonry{
+        background-size: cover;
+        background-position: center 70px;
+        height: 15rem;
+    }
+
+    .masonry .masonry-title {
+        font-size: 2rem;
+    }
+}

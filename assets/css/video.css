@@ -1,0 +1,100 @@
+.video {
+    background-image: url(../img/what-title.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+    height: 480px;
+    padding: 13rem 0;
+    background-color: #f6f6f6;
+}
+
+.video .video-title {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.video-1 {
+    padding: 8rem 0;
+}
+
+.left-video {
+    background-image: url(../img/about-me-img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 0px;
+    padding: 15rem 0;
+    width: 48%;
+    margin-right: 1rem;
+}
+
+.right-video {
+    background-image: url(../img/about-me-img-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 0px;
+    padding: 15rem 0;
+    width: 48%;
+    margin-left: 1rem;
+}
+
+.video-3 {
+    background-image: url(../img/video-button-img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 0px;
+    width: 100%;
+    padding: 15rem 0;
+    margin-top: 5rem;
+}
+
+.video-1 .video-button-play,
+.video-3 .video-button-play {
+    color: #be9c79;
+    font-size: 80px;
+    line-height: 1;
+}
+
+.video-1:hover .video-button-play,
+.video-3 .video-button-play:hover {
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+
+    .right-video,
+    .left-video {
+        width: 100%;
+        height: 20rem;
+        margin: 0;
+    }
+
+    .left-video {
+        margin-bottom: 1rem;
+    }
+
+    .video-1 .video-button-play,
+    .video-3 .video-button-play {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .video {
+        background-size: cover;
+        background-position: center 70px;
+        height: 12rem;
+    }
+
+    .video .video-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .video .video-title {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,115 @@
+.our-team {
+    background-image: url(../img/what-title.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+    height: 480px;
+    padding: 13rem 0;
+    background-color: #f6f6f6;
+}
+
+.our-team .our-team-title {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+/* team section */
+.team .member-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.team .name {
+    line-height: 1.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.team .job {
+    font-family: "Open Sans", sans-serif;
+    line-height: 26px;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 6px 0 10p;
+}
+
+.team .member-icon {
+    font-size: 15px;
+    color: #b3b3b3;
+    margin: 0 15px 0 0;
+}
+
+.team .member-icon:hover {
+    color: var(--main-color) !important;
+}
+
+/* team-2 section */
+.team-2 {
+    background-image: url(../img/menu-background-img.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding: 8rem 0;
+}
+
+.team-2 .member-info {
+    position: absolute;
+    bottom: 0;
+    left: 0.7rem;
+    right: 0.7rem;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: auto;
+    height: 0;
+    transition: .5s ease;
+    margin: 0;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.team-member:hover .member-info {
+    height: 100%;
+}
+
+.team-2 .name,
+.team-2 .job,
+.team-2 .member-icons {
+    white-space: nowrap;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team-2 .job {
+    margin-top: 2rem;
+}
+
+.team-2 .member-icons {
+    margin-top: 4rem;
+}
+
+@media (max-width: 800px) {
+    .our-team {
+        background-position: center 70px;
+        height: 12rem;
+    }
+
+    .our-team .our-team-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .our-team .our-team-title {
+        font-size: 1.3rem;
+    }
+}

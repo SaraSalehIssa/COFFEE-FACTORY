@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap 5.3v -->
+    <link rel="stylesheet" href="assets/css//bootstrap.min.css">
+
+    <!-- fontawesome 6.4v -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.module.css">
+    <link rel="stylesheet" href="./assets/css/parallax.module.css">
+
+    <title>Parallax Section</title>
+
+    <link rel="icon" href="./assets/img/453-4536090_coffe-cup-png.png" />
+</head>
+
+<body>
+    <div class="scroll-to-top position-fixed d-flex justify-content-center align-items-center opacity-0 invisible">
+        <a class="text-decoration-none text-white" href="#">
+            <div>
+                <i class="leftIcon position-absolute fa-solid fa-minus"></i>
+                <i class="rightIcon position-absolute fa-solid fa-minus"></i>
+            </div>
+        </a>
+    </div>
+    
+    <!-- start search section -->
+    <div id="searchSection" class="searchSection">
+        <div class="form-holder-outer">
+            <div class="form-holder">
+                <div class="form-holder-inner">
+                    <input type="text" placeholder="Search" class="search_field">
+                    <div id="search-close" class="search-close">
+                        <i class="fa-solid fa-xmark search-close-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end search section -->
+
+    <!-- start side-menu section -->
+    <section id="side-menu" class="side-menu">
+        <div id="side-menu-close" class="side-menu-close">
+            <i class="fa-solid fa-xmark side-menu-icon"></i>
+        </div>
+        <div class="media_image">
+            <div onclick="ToHome()">
+                <img src="./assets/img/logo-sticky.png" class="image" alt="logo image">
+            </div>
+        </div>
+        <div class="widget_text">
+            <p class="text-white">Lorem ipsum dolor sit amet, consecteturadip iscing elit, sed do eiusmod tempor
+                incididunt ut labore
+                et dolore sit.</p>
+        </div>
+        <div class="widget_text">
+            <p><a class="email-menu" href="mailto:corretto@example.com">corretto@example.com</a></p>
+        </div>
+        <div class="widget_text">
+            <p><a class="tel-menu" href="tel:+369-7482-36-96">+369-7482-36-96</a></p>
+        </div>
+        <div class="member-icons">
+            <a class="member-icon text-decoration-none" href="https://www.instagram.com/qodeinteractive/"
+                target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="member-icon text-decoration-none" href="https://www.twitter.com/qodeinteractive/" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="member-icon text-decoration-none" href="https://www.facebook.com/QodeInteractive/"
+                target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="member-icon text-decoration-none" href="https://www.tumblr.com/" target="_blank">
+                <i class="fa-brands fa-tumblr"></i>
+            </a>
+        </div>
+    </section>
+    <!-- end side-menu section -->
+
+    <!-- start navbar section -->
+    <nav class="navbar navbar-expand-lg fixed-top px-0">
+        <div class="container-fluid container-small">
+            <button class="navbar-toggler navbar-toggler-css border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-logo" onclick="ToHome()">
+                <img class="navbar-img" src="assets/img/logo-light.png" alt="Corretto logo!">
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-5">
+                        <div class="nav-link px-0 text-uppercase active" aria-current="page" onclick="ToHome()">Home
+                        </div>
+                    </li>
+                    <li class="nav-item me-5 dropdown">
+                        <a class="nav-link dropdown-toggle px-0 text-uppercase" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu ul-menu mt-3">
+                            <div class="navLine d-flex align-items-center">
+                                <li><a class="dropdown-item nav-part text-uppercase d-inline" href="/aboutUs.html">about
+                                        us</a></li>
+                            </div>
+                            <div class="navLine d-flex align-items-center">
+                                <li><a class="dropdown-item nav-part text-uppercase d-inline" href="/aboutMe.html">about
+                                        me</a></li>
+                            </div>
+                            <div class="navLine d-flex align-items-center">
+                                <li><a class="dropdown-item nav-part text-uppercase d-inline" href="/ourTeam.html">our
+                                        team</a></li>
+                            </div>
+                            <div class="navLine d-flex align-items-center">
+                                <li><a class="dropdown-item nav-part text-uppercase d-inline" href="/offer.html">what we
+                                        offer</a></li>
+                            </div>
+                            <div class="navLine d-flex align-items-center">
+                                <li><a class="dropdown-item nav-part text-uppercase d-inline" href="/menu.html">our
+                                        menu</a></li>
+                            </div>
+                            <div class="navLine d-flex align-items-center">
+                                <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                        href="/location.html">location</a></li>
+                            </div>
+                            <div class="navLine d-flex align-items-center">
+                                <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                        href="/contactUs.html">contact us</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-5 dropdown">
+                        <a class="nav-link dropdown-toggle px-0 text-uppercase" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu ul-menu mt-3">
+                            <div class="navLine d-flex align-items-center">
+                                <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                        href="/standard.html">standard</a></li>
+                            </div>
+                            <div class="navLine d-flex align-items-center">
+                                <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                        href="/gallery.html">gallery</a></li>
+                            </div>
+                            <div class="navLine d-flex align-items-center">
+                                <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                        href="/masonry.html">masonry</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-5">
+                        <div class="nav-link px-0 text-uppercase" onclick="ToBlog()">Blog</div>
+                    </li>
+                    <li class="nav-item me-5">
+                        <div class="nav-link px-0 text-uppercase" onclick="ToShop()">Shop</div>
+                    </li>
+                    <li class="nav-item me-5 dropdown">
+                        <a class="nav-link dropdown-toggle px-0 text-uppercase" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Elements
+                        </a>
+                        <ul class="menu-row dropdown-menu ul-menu mt-3">
+                            <div class="row flex-nowrap p-3">
+                                <div class="col-6 text-start">
+                                    <p class="titleFornav text-uppercase">presentation</p>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/team.html">team</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/gallery.html">image gallery</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/testimonials.html">testimonials</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/itemShowcase.html">item showcase</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/parallax.html">parallax section</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/video.html">video button</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/portfolio.html">portfolio list</a></li>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 text-start">
+                                    <p class="titleFornav text-uppercase">infographic</p>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/restaurant.html">restaurant menu list</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/progress.html">progress bar</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/counters.html">counters</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/countdown.html">countdown</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/chart.html">pia chart</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/blog.html">blog list</a></li>
+                                    </div>
+                                    <div class="navLine d-flex align-items-center">
+                                        <li><a class="dropdown-item nav-part text-uppercase d-inline"
+                                                href="/shop.html">shop list</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="text-decoration-none" href="cart.html" target="_self">
+                    <i class="nav-icon fa-solid fa-cart-shopping text-white"></i>
+                    <span class="cart-number text-white me-3">0</span>
+                </a>
+                <a href="#">
+                    <i id="searchIcon" class="nav-icon fa-solid fa-magnifying-glass fa-rotate-90 text-white me-4"></i>
+                </a>
+                <a href="#">
+                    <i id="sideMenuIcon" class="nav-icon fa-solid fa-bars text-white"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar section -->
+
+    <!-- start header section-->
+    <div id="parallax" class="parallax d-flex justify-content-center align-items-center p-0">
+        <div>
+            <h1 class="parallax-title text-uppercase text-white m-0">Parallax Section</h1>
+        </div>
+    </div>
+    <!-- end header section-->
+
+    <div class="fixed-icon-1">
+        <a href="#"><i class="fa-solid fa-mug-hot"></i></a>
+    </div>
+
+    <div class="fixed-icon-2">
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+
+    <!-- start images section-->
+    <div id="photo-1" class="showIcon photo-1 p-0">
+    </div>
+    <div id="photo-2" class="photo-2 p-0">
+    </div>
+    <div id="photo-3" class="photo-3 p-0">
+    </div>
+    <!-- end images section-->
+
+    <!-- start footer section -->
+    <section class="footer" id="footer">
+        <div class="container d-flex flex-column py-5">
+            <div class="d-flex justify-content-center py-5">
+                <img src="assets/img/logo-footer-sidearea.png" alt="footer logo" />
+            </div>
+            <div class=" d-flex flex-column justify-content-center">
+                <p class="text-white text-center m-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor</p>
+                <p class="text-white text-center m-0">incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam,</p>
+                <p class="text-white text-center m-0">nostrud exercitation ullamco laboris.”</p>
+            </div>
+            <div class=" d-flex flex-column justify-content-center py-5">
+                <h2 class="stories text-white text-center text-uppercase">stories</h2>
+                <p class="text-center m-0">
+                    <a class="address text-white text-capitalize"
+                        href="https://www.google.rs/maps/place/S+Dunsmuir+Ave,+Los+Angeles,+CA,+%D0%A1%D1%98%D0%B5%D0%B4%D0%B8%D1%9A%D0%B5%D0%BD%D0%B5+%D0%94%D1%80%D0%B6%D0%B0%D0%B2%D0%B5/@34.0581432,-118.3521173,17z/data=!4m13!1m7!3m6!1s0x80c2b91ebe5c605d:0xb7f2651573d71318!2zUyBEdW5zbXVpciBBdmUsIExvcyBBbmdlbGVzLCBDQSwg0KHRmNC10LTQuNGa0LXQvdC1INCU0YDQttCw0LLQtQ!3b1!8m2!3d34.0581432!4d-118.3499286!3m4!1s0x80c2b91ebe5c605d:0xb7f2651573d71318!8m2!3d34.0581432!4d-118.3499286"
+                        target="_blank">
+                        Dunsmuir Ave, Los Angeles, CA 90036, USA
+                    </a>
+                </p>
+                <p class="text-center m-0">
+                    <a class="address text-white text-capitalize"
+                        href="https://www.google.rs/maps/place/Atkins+Ave,+Brooklyn,+NY+11208,+%D0%A1%D1%98%D0%B5%D0%B4%D0%B8%D1%9A%D0%B5%D0%BD%D0%B5+%D0%94%D1%80%D0%B6%D0%B0%D0%B2%D0%B5/@40.6687974,-73.8797651,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25da515949c19:0x48cd4616d9e87738!8m2!3d40.6687934!4d-73.8775764"
+                        target="_blank">
+                        Atkins Ave, Brooklyn, NY 11208, USA
+                    </a>
+                </p>
+            </div>
+            <div class=" d-flex flex-column justify-content-center py-5">
+                <h2 class="news text-white text-center text-uppercase">news as fresh as our coffee</h2>
+            </div>
+            <div class="email-div d-flex align-items-center justify-content-center pb-5">
+                <input class="email bg-transparent text-white ps-3 pe-5" type="email" name="your-email"
+                    placeholder="Your E-mail Address...">
+                <div class="mgs-div">
+                    <i class="mgs-icon fa-regular fa-envelope text-gray bg-white m-0"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-inside">
+                <div class="footer-row row d-flex align-items-center">
+                    <div class="first-item-footer col-lg-3 col-md-6 pe-0 d-flex justify-content-end">
+                        <p class="footer-rights text-capitalize text-white m-0">
+                            © 2018
+                            <a class="footer-rights-a text-capitalize text-white text-decoration-none"
+                                href="https://qodeinteractive.com/" target="_blank">Qode Interactive</a>
+                            , All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="footer-menu col-lg-6 col-md-12 d-flex justify-content-center">
+                        <ul id="menu-footer-menu" class="menu m-0">
+                            <li id="menu-item-home" class="menu-item"><a class="menu-a" href="/index.html">Home</a></li>
+                            <li id="menu-item-about" class="menu-item"><a class="menu-a" href="/aboutUs.html">About</a>
+                            </li>
+                            <li id="menu-item-shop" class="menu-item"><a class="menu-a" href="#">Shop</a></li>
+                            <li id="menu-item-contact" class="menu-item"><a class="menu-a"
+                                    href="/contactUs.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-icons col-lg-3 col-md-6 d-flex justify-content-center">
+                        <a class="footer-icon text-decoration-none text-white"
+                            href="https://www.instagram.com/qodeinteractive/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="footer-icon text-decoration-none text-white"
+                            href="https://www.twitter.com/qodeinteractive/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a class="footer-icon text-decoration-none text-white"
+                            href="https://www.facebook.com/qodeinteractive/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="footer-icon text-decoration-none text-white" href="https://www.tumblr.com/"
+                            target="_blank">
+                            <i class="fa-brands fa-tumblr"></i>
+                        </a>
+                        <a class="footer-icon text-decoration-none text-white" href="https://www.vimeo.com/"
+                            target="_blank">
+                            <i class="fa-brands fa-vimeo-v"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end footer section -->
+
+    <!-- bootstrap 5.3v -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScripy -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

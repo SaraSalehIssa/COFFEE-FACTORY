@@ -1,0 +1,86 @@
+.progress-header {
+    background-image: url(../img/what-title.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+    height: 480px;
+    padding: 13rem 0;
+    background-color: #f6f6f6;
+}
+
+.progress-header .progress-header-title {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.progress-2 .item {
+    font-family: "Open Sans", sans-serif;
+    color: #262626;
+    font-size: 18px;
+}
+
+.progress-img {
+    background-image: url(../img/p2-background-img-1.jpg);
+}
+
+.bar {
+    position: relative;
+    background-color: #262626;
+    height: 0.5rem;
+}
+
+.bar-2 {
+    background-color: #ebebeb;
+}
+
+.bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    width: 80%;
+    height: 100%;
+}
+
+.item[percentage="95%"] .bar::after {
+    width: 95%;
+}
+
+.item[percentage="80%"] .bar::after {
+    width: 80%;
+}
+
+.item[percentage="55%"] .bar::after {
+    width: 55%;
+}
+
+@media (max-width: 992px) {
+    .progress-2 .counter-item{
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .video {
+        background-position: center 70px;
+        height: 12rem;
+    }
+
+    .video .video-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .progress-header {
+        background-position: center 70px;
+        height: 15rem;
+    }
+
+    .progress-header .progress-header-title {
+        font-size: 1.3rem;
+    }
+}

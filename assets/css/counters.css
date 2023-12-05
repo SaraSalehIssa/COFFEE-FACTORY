@@ -1,0 +1,37 @@
+.counters-header {
+    background-image: url(../img/what-title.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+    height: 480px;
+    padding: 13rem 0;
+    background-color: #f6f6f6;
+}
+
+.counters-header .counters-header-title {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.counter {
+    background-image: url(../img/p2-background-img-1.jpg);
+}
+
+@media (max-width: 800px) {
+    .counters-header {
+        background-position: center 70px;
+        height: 12rem;
+    }
+
+    .counters-header .counters-header-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .counters-header .counters-header-title {
+        font-size: 1.3rem;
+    }
+}
